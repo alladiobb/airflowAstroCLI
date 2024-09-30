@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "airflowAstroCLI",
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.autoComplete.extraPaths": [
+			"/home/astro/.local/lib/python3.12/site-packages"
+		]
+	}
+}
