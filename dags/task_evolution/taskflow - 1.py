@@ -11,7 +11,7 @@ def _task_b():
     print(ti.xcom_pull(task_ids='task_a'))
 
 with DAG(
-    dag_id='taskflow',
+    dag_id='taskflow1',
     start_date=datetime(2024,9,30),
     schedule='@daily',
     catchup=False,

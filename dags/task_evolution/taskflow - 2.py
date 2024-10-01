@@ -1,4 +1,5 @@
 from airflow.decorators import dag, task
+from airflow.operators.python import PythonOperator
 from datetime import datetime
 
 def _task_a():
@@ -16,7 +17,7 @@ def _task_b():
     tags=['taskflow']
 )
 
-def taskflow():
+def taskflow2():
     task_a = PythonOperator(
         task_id='task_a',
         python_callable=_task_a,
@@ -30,4 +31,4 @@ def taskflow():
 
     task_a >> task_b
 
-taskflow()
+taskflow2()

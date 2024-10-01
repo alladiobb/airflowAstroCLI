@@ -8,7 +8,7 @@ from datetime import datetime
     tags=['taskflow']
 )
 
-def taskflow():
+def taskflow3():
 
     @task
     def task_a():
@@ -21,4 +21,4 @@ def taskflow():
 
         task_b(task_a())
 
-taskflow()
+taskflow3()
