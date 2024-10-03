@@ -9,6 +9,7 @@ astro dev stop
 ```
 astro test 
 ```
+
 ## Open bash using Astro CLI
 ```
 astro dev bash
