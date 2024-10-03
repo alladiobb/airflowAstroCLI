@@ -21,7 +21,7 @@ def _store_prices(stock):
 
     bucket_name = 'stock-market'
     if not client.bucket_exists(bucket_name):
-            client.make_bucket(bucket_name)
+        client.make_bucket(bucket_name)
     stock = json.loads(stock)
     symbol = stock['meta']['symbol']
     data = json.dumps(stock, ensure_ascii=False).encode('uft8')
