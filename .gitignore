@@ -10,3 +10,4 @@ webserver_config.py
 airflow.cfg
 airflow.db
 docker-compose copy.yml
+dags/stock_mkt_test.py
